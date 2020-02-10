@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link {% if current_menu is defined and current_menu == 'properties' %} active {% endif %}" href="{{ path('app_home') }}">Accueil</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link {% if current_menu is defined and current_menu == 'fabric' %} active {% endif %}" href="{{ path('app_fabricSublimes') }}">La Fabric des Sublimés</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link {% if current_menu is defined and current_menu == 'creation' %} active {% endif %}" href="{{ path('app_creation') }}">Créations</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link {% if current_menu is defined and current_menu == 'commandez' %} active {% endif %}" href="{{ path('app_commandez') }}">Commandez</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link {% if current_menu is defined and current_menu == 'contact' %} active {% endif %}" href="{{ path('app_contact') }}">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>

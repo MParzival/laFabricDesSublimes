@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CommandezController!{% endblock %}
+
+{% block body %}
+
+<section id="oeuvre">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="image1">
+                        <img src="{{ asset('img/pageCommander/main1.jpg') }}" class="imgMainGauche" alt="">
+                    </div>
+                    <div class="text-center image3">
+                        <h2>Commandez votre oeuvre d’art sur mesure</h2>
+                    </div>
+                    <div class="image1">
+                        <img src="{{ asset('img/pageCommander/main2.jpg') }}" class="imgMainDroite" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="para para3">
+                            La Fabric des Sublimés vous propose de réaliser
+                            une oeuvre d’art sur mesure, qui correspond à toutes vos préférences et envies.
+                        </p>
+                        <p class="para ">
+                            Pour cela, vous allez devoir un peu travailler en choisissant le thème, la technique, le support, les dimensions et l’occasion spéciale s’il y a.
+                            Si vous avez besoin de conseils, n’hésitez pas à me contacter afin que votre commande soit en harmonie avec votre univers et vos besoins.
+                        </p>
+                        <p class="para">
+                            Vous pouvez m’envoyer vos choix par e-mail, portable ou par le formulaire à remplir
+                            à l’onglet «Contact». Je vous répondrai dans les plus brefs délais pour la création de votre devis et pour discuter de votre commande.
+                        </p>
+                    </div>
+                    <div class="image1 text-center">
+                        <img src="{{ asset('img/pageCommander/logo.jpg') }}" class="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="choix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="image1">
+                        <img src="{{ asset('img/pageCommander/mainMotifTitre.jpg') }}" class="imgMainMotifGauche" alt="">
+                    </div>
+                    <div class="text-center image3">
+                        <h2>Des choix abracadabrantesques :</h2>
+                    </div>
+                    <div class="image1">
+                        <img src="{{ asset('img/pageCommander/etoilesTitre.jpg') }}" class="imgEtoileDroite" alt="">
+                    </div>
+                    <div class="">
+                        <p class="para para3">
+                            <ul>
+                                <li class="pb-3"><span class="theme">Thème :</span>
+                                    vous avez le choix des thèmes proposés sur ce site ou d’un thème libre, de votre univers.
+                                </li>
+                                <li class="pb-3"><span class="technique">Technique :</span>
+                                    vous avez le choix sur toutes les techniques proposées sur ce site :
+                                    <ul>
+                                        <li>peinture acrylique.</li>
+                                        <li>aquarelle + encre de chine</li>
+                                        <li>crayon de papier.</li>
+                                        <li>stylo encre + encre de chine + aquarelle.</li>
+                                        <li>stylo encre.</li>
+                                        <li>broderie avec fils de coton colorés, fils lurex brillants, perles et sequins.</li>
+                                    </ul>
+                                </li>
+                                <li class="pb-3"><span class="support">Support :</span>
+                                    vous avez le choix entre :
+                                    <ul>
+                                        <li>une toile en lin sur chassis.</li>
+                                        <li>du papier épais, style papier canson blanc.</li>
+                                        <li>du tissu, des tissus neufs que j’ai récupéré lors de mes stages en manufactures,
+                                            uni, avec du motif, en lin, en polyester etc...rien ne se perd.</li>
+                                        <li>pour les broches, un tissu uni ou à motifs</li>
+                                    </ul>
+                                </li>
+                            <li class="pb-3"><span class="dimmension">Dimmensions :</span>
+                                <ul>
+                                    <li>pour les toiles en lin :<br>
+                                        format portrait ou paysage maximum 65 x 54 cm <br>
+                                        ou carré maximum 60 x 60 cm.</li>
+                                    <li>pour le papier épais : <br>
+                                        format portrait ou paysage maximum en A3 = 42 x 29,7 cm <br>
+                                        ou carré maximum 29,7 x 29,7 cm.</li>
+                                    <li>pour le tissu uni ou à motifs :<br>
+                                        format portrait ou paysage maximum en A4 = 21 x 29,7 cm <br>
+                                        ou carré maximum 21 x 21 cm.</li>
+                                    <li>pour l’accessoire mode, la broche en format «intérieure de la main», maximum 10 x 10 cm.</li>
+                                </ul>
+                            </li>
+                            <li class="pb-3"><span class="occasion">Occasion spécial :</span>
+                                si vous souhaitez offrir un cadeau unique et sur mesure lors d’une occasion spéciale comme une naissance, un mariage, un anniversaire, fêtes de fin d’année, saint valentin ... merci de me l’indiquer.
+                            </li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
