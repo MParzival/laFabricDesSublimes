@@ -190,6 +190,7 @@ i{
 .imgFeuille{
     position: absolute;
     margin-top: -50px;
+    margin-left: 130px;
     z-index: -1;
 }
 .imgHirondelle2{
@@ -207,7 +208,7 @@ i{
 }
 .imgMainMotif2{
     position: absolute;
-    margin-top: -100px;
+    margin-top: -110px;
     margin-left: 50px;
     z-index: -1;
 }
