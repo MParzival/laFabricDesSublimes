@@ -1,0 +1,71 @@
+/* Général */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section{
+    padding: 10px;
+}
+/* Police */
+.elephant{
+    font-family: Elephant, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.segeoUI{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 21px;
+}
+/* Barre de navigation */
+.navbar-nav{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:lighter ;
+}
+
+.bg-light{
+    background-color: white !important;
+}
+.nav-link{
+    text-transform: uppercase;
+    border-bottom: 4px dotted #ffe6ee;
+    margin: 0 20px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 6px dotted #ff99bb;
+}
+.active{
+    border-bottom: 6px dotted #80002a;
+}
+/* Page Accueil */
+
+.accueil{
+    margin-top: 80px;
+    font-family: Elephant, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.text-accueil{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.col-lg-4 img{
+    height: 350px;
+    width: 350px;
+}
+/* Footer */
+.logo-bas{
+    width: 180px;
+    height: 120px;
+}
+i{
+    font-size: 40px;
+    color: black;
+}
+.list-group-item{
+    margin: 0 10px 10px 0;
+    border: none;
+}
+.sociaux{
+    margin: 0 30px 30px 30px;
+}

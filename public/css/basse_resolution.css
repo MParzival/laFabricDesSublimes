@@ -1,0 +1,108 @@
+/*****************/
+/*    General    */
+/*****************/
+.elephant{
+    font-size: 25px;
+}
+.col-lg-4 img{
+    height: 230px;
+    width: 230px;
+}
+/*****************/
+/*    Accueil    */
+/*****************/
+.logoLaFabricDesSublimes{
+    width: 376px;
+    height: 382px;
+}
+.accueil{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.text-accueil{
+    font-size: 15px;
+}
+.col-lg-4 img{
+    height: 230px;
+    width: 230px;
+}
+/*****************/
+/* PAGE FABRIC section sublimer emotion */
+/*****************/
+.alignleft {
+    float: left;
+}
+.imageMainTitre{
+    display: none;
+}
+.titre{
+    position: relative;
+    top: 80px;
+}
+/*****************/
+/* PAGE FABRIC section parcour */
+/*****************/
+
+.alignRight{
+    float: right;
+}
+.titreParcour{
+    position: relative;
+    left: 50px;
+    top: 120px;
+}
+.imgHirondelle{
+    display: none;
+}
+.imageHirondelle{
+    width: 150px;
+    height: 150px
+}
+/*****************/
+/* PAGE FABRIC section logo */
+/*****************/
+.br{
+    display: compact;
+}
+.img2Stars{
+    position: relative;
+    left: 40px;
+    width: 116px;
+    height: 156px;
+}
+.img1Stars{
+    position: relative;
+    float: right;
+    top: -200px;
+    right: 60px;
+    width: 80px;
+    height: 86px;
+}
+.titreLogo{
+    position: relative;
+    top: -100px;
+}
+.imgLogoSignification{
+    width: 642px; height: 485px
+}
+/*****************/
+/* PAGE FABRIC section laFabricWhy */
+/*****************/
+.image3Stars{
+    display: none;
+}
+.parapheFabric{
+    margin-top: 300px;
+}
+/*****************/
+/* PAGE FABRIC section gestePlanete */
+/*****************/
+.imgFleur{
+    display: none;
+}
+/*****************/
+/* PAGE FABRIC section artisanat */
+/*****************/
+.imgMainMotif{
+    display: none;
+}

@@ -1,0 +1,303 @@
+
+.light{
+    font-weight: lighter;
+}
+.sociaux{
+    margin: 0 30px 30px 30px;
+}
+
+
+
+
+.imgSublime{
+    width: 320px;
+    height: 320px;
+}
+
+/*****************/
+/* PAGE FABRIC section sublimer emotion */
+/*****************/
+.alignleft {
+    float: left;
+}
+.imageMainTitre{
+    width: 150px;
+    height: 150px
+}
+.titre{
+    position: relative;
+    left: 20px;
+    top: 80px;
+}
+.imageMainEmotion{
+    position: relative;
+    left: 240px;
+    top: -60px;
+}
+/*****************/
+/* PAGE FABRIC section parcour */
+/*****************/
+
+.alignRight{
+    float: right;
+}
+.titreParcour{
+    position: relative;
+    left: 200px;
+    top: 120px;
+}
+.imgHirondelle{
+    position: relative;
+    left: 140px;
+    top: -20px;
+}
+.imageHirondelle{
+    width: 150px;
+    height: 150px
+}
+/*****************/
+/* PAGE FABRIC section laFabricWhy */
+/*****************/
+.titreFabric{
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+.image3Stars{
+    position: relative;
+    left: 430px;
+}
+.imgLogo{
+    width: 365px;
+    height: 365px;
+}
+.img3Stars{
+    width: 150px;
+    height: 150px;
+}
+/*****************/
+/* PAGE FABRIC section logo */
+/*****************/
+
+.img2Stars{
+    position: relative;
+    left: 100px;
+}
+.img1Stars{
+    position: relative;
+    float: right;
+    top: -200px;
+    right: 120px;
+}
+.titreLogo{
+    position: relative;
+    top: -100px;
+}
+.imgLogoSignification{
+    width: 1100px; height: 900px
+}
+/*****************/
+/* PAGE FABRIC section gestePlanete */
+/*****************/
+.imgFleur{
+    position: relative;
+    top: 50px;
+    left: 200px;
+    z-index: -1;
+}
+/*****************/
+/* PAGE FABRIC section artisanat */
+/*****************/
+.imgMainMotif{
+    position: relative;
+    top: 70px;
+    left: 290px;
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+
+}
+@media screen and (min-width: 500px) and (max-width: 769px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgCerisier{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 90px;
+    z-index: -1;
+}
+.span{
+    color: red;
+    font-size: 9px;
+}
+.col-md-3 img{
+    height: 250px;
+    width: 250px;
+}
+
+.imgFeuille{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 130px;
+    z-index: -1;
+}
+.imgHirondelle2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: -135px;
+    margin-left: 250px;
+    z-index: -1;
+}
+.imgOiseau{
+    position: absolute;
+    margin-top: -100px;
+    z-index: -1;
+}
+.imgMainMotif2{
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 50px;
+    z-index: -1;
+}
+.imgFleur2{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 170px;
+    z-index: -1;
+}
+.imgMainGauche{
+    position: absolute;
+    width: 150px;
+    margin-top: -140px;
+    margin-left: 145px;
+    z-index: -1;
+}
+.imgMainDroite{
+    position: absolute;
+    width: 150px;
+    margin-top: -275px;
+    margin-left: 805px;
+    z-index: -1;
+}
+.imgMainMotifGauche{
+    position: absolute;
+    width: 150px;
+    margin-top: -120px;
+    margin-left: 200px;
+    z-index: -1;
+}
+.imgEtoileDroite{
+    position: absolute;
+    width: 150px;
+    margin-top: -220px;
+    margin-left: 780px;
+    z-index: -1;
+}
+.theme, .technique, .support, .dimmension, .occasion{
+    font-weight: bold;
+    font-style: italic;
+}
+.theme{
+    color: #f28a3d;
+}
+.technique{
+    color: #e83f58;
+}
+.support{
+    color: #e83f58;
+}
+.dimmension{
+    color: #922159;
+}
+.occasion{
+    color: #2c2851;
+}
+.logoContact{
+    width: 300px;
+    height: 270px;
+}
+.titreContact{
+    color: #e83f58;
+    font-family: Elephant, serif;
+    font-weight: bold;
+}
+.listContact > li > span{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.formEmailNomPrenom::placeholder{
+    color: #f28a3d;
+}
+.formEmailNomPrenom{
+    border: 3px dotted #f28a3d;
+}
+.formSujetPhone::placeholder{
+    color: #e83f58;
+}
+.formSujetPhone{
+    border: 3px dotted #e83f58;
+}
+.formFabric::placeholder{
+    color: #922159;
+}
+.formFabric{
+    border: 3px dotted #922159;
+}
+.formMessage::placeholder{
+    color: #2c2851;
+}
+.formMessage{
+    border: 3px dotted #2c2851;
+}
+.btn-fabric{
+    font-family: Elephant, serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #e83f58 ;
+    color: white;
+    float: right;
+}
+
+/****************/
+/*              */
+/* nav Creation */
+/*              */
+/****************/
+
+.fixed-top{
+    margin-top: 100px;
+}
+.btn{
+    background-color: #e83f58;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.btn:hover{
+    background-color: #922159;
+    color: white;
+}
+

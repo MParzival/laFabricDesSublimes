@@ -1,0 +1,45 @@
+
+
+
+
+/*****************/
+/* PAGE FABRIC section logo */
+/*****************/
+.img2Stars{
+    position: relative;
+    left: 40px;
+    width: 116px;
+    height: 156px;
+}
+.img1Stars{
+    position: relative;
+    float: right;
+    top: -200px;
+    right: 60px;
+    width: 80px;
+    height: 86px;
+}
+.titreLogo{
+    position: relative;
+    top: -100px;
+}
+.imgLogoSignification{
+    width: 800px; height: 600px
+}
+/*****************/
+/* PAGE FABRIC section gestePlanete */
+/*****************/
+.imgFleur{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    z-index: -1;
+}
+/*****************/
+/* PAGE FABRIC section artisanat */
+/*****************/
+.imgMainMotif{
+    position: relative;
+    top: 70px;
+    left: 210px;
+}
