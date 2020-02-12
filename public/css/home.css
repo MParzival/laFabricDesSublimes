@@ -215,6 +215,26 @@ i{
 
 @media screen and (max-width: 992px){
     /*****************/
+    /* PAGE FABRIC section sublimer emotion */
+    /*****************/
+    .alignleft {
+        float: left;
+    }
+    .imageMainTitre{
+        width: 120px;
+        height: 120px
+    }
+    .titre{
+        position: relative;
+        top: 80px;
+    }
+    .imageMainEmotion{
+        position: relative;
+        left: 240px;
+        top: -20px;
+    }
+
+    /*****************/
     /* PAGE FABRIC section parcour */
     /*****************/
 
