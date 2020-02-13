@@ -140,7 +140,47 @@ section{
     width: 126px;
     height: 166px;
 }
-
+/* Page Creation */
+a img, .imgAvenir{
+    width: 250px;
+    height: 250px;
+}
+.imgCerisier{
+    top: 50px;
+    left: 80px;
+    z-index: -1;
+}
+.imgFeuille{
+    top: 80px;
+    left: 80px;
+    z-index: -1;
+}
+.imgHirondelle2{
+    width: 205px;
+    height: 235px;
+    z-index: -1;
+    top: 65px;
+    left: 200px;
+}
+.imgOiseau{
+    top: 65px;
+    left: 120px;
+    width: 112px;
+    height: 207px;
+    z-index: -1;
+}
+.imgMainMotif2{
+    z-index: -1;
+    top: 80px;
+    left: 60px;
+}
+.imgFleur2{
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    left: 180px;
+    top: 50px;
+}
 /* Page Commandez */
 
 .titreCommandez{

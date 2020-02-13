@@ -8,6 +8,9 @@ section{
 .titre-center{
     text-align: center;
 }
+#navigation{
+    display: none;
+}
 /* Police */
 .elephant{
     font-family: Elephant, serif;
@@ -101,7 +104,79 @@ i{
 .occasion{
     color: #2c2851;
 }
+/* Page Creation */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a img, .imgAvenir{
+    width: 250px;
+    height: 250px;
+}
+.span{
+    color: red;
+    font-size: 9px;
+}
+.imgCerisier{
+    position: relative;
+    top: 50px;
+    left: 150px;
+    z-index: -1;
+}
+.imgFeuille{
+    position: relative;
+    top: 80px;
+    left: 140px;
+    z-index: -1;
+}
+.imgHirondelle2{
+    position: relative;
+    width: 205px;
+    height: 235px;
+    z-index: -1;
+    top: 65px;
+    left: 280px;
+}
+.imgOiseau{
+    position: relative;
+    top: 65px;
+    left: 140px;
+    width: 112px;
+    height: 207px;
+    z-index: -1;
+}
+.imgMainMotif2{
+    position: relative;
+    z-index: -1;
+    top: 80px;
+    left: 80px;
+}
+.imgFleur2{
+    position: relative;
+    z-index: -1;
+    left: 190px;
+    top: 50px;
+}
+/****************/
+/*              */
+/* nav Creation */
+/*              */
+/****************/
 
+.fixed-top{
+    margin-top: 100px;
+}
+.btn{
+    background-color: #e83f58;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.btn:hover{
+    background-color: #922159;
+    color: white;
+}
 /* Page Contact */
 .logoContact{
     width: 300px;

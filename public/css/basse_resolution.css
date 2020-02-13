@@ -4,13 +4,15 @@
 .elephant{
     font-size: 25px;
 }
-
 .col-md-12 img{
     height: 230px;
     width: 230px;
 }
 section{
     margin-top: 30px;
+}
+#navigation{
+    display: none;
 }
 .taille-image-accueil{
     height: 230px;
@@ -24,8 +26,8 @@ section{
 /*    Accueil    */
 /*****************/
 .logoLaFabricDesSublimes{
-    width: 376px;
-    height: 382px;
+    width: 300px;
+    height: 308px;
 }
 .accueil{
     margin-top: 30px;
@@ -109,7 +111,29 @@ section{
 .imgMainMotif{
     display: none;
 }
-
+/* Page Creation */
+.imgCerisier{
+    display: none;
+}
+.imgFeuille{
+    display: none;
+}
+.imgHirondelle2{
+    display: none;
+}
+.imgOiseau{
+    display: none;
+}
+.imgMainMotif2{
+    display: none;
+}
+.imgFleur2{
+    display: none;
+}
+a img, .imgAvenir {
+    width: 150px;
+    height: 150px;
+}
 /* Page Commandez */
 .imgMainGauche{
     display: none;

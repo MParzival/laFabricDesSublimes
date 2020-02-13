@@ -137,72 +137,9 @@
 
 
 
-.imgCerisier{
-    position: absolute;
-    margin-top: -100px;
-    margin-left: 90px;
-    z-index: -1;
-}
-.span{
-    color: red;
-    font-size: 9px;
-}
-.col-md-3 img{
-    height: 250px;
-    width: 250px;
-}
-
-.imgFeuille{
-    position: absolute;
-    margin-top: -50px;
-    margin-left: 130px;
-    z-index: -1;
-}
-.imgHirondelle2{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-top: -135px;
-    margin-left: 250px;
-    z-index: -1;
-}
-.imgOiseau{
-    position: absolute;
-    margin-top: -100px;
-    z-index: -1;
-}
-.imgMainMotif2{
-    position: absolute;
-    margin-top: -110px;
-    margin-left: 50px;
-    z-index: -1;
-}
-.imgFleur2{
-    position: absolute;
-    margin-top: -100px;
-    margin-left: 170px;
-    z-index: -1;
-}
 
 
 
-/****************/
-/*              */
-/* nav Creation */
-/*              */
-/****************/
 
-.fixed-top{
-    margin-top: 100px;
-}
-.btn{
-    background-color: #e83f58;
-    color: white;
-    border-radius: 10px;
-    margin: 10px;
-}
-.btn:hover{
-    background-color: #922159;
-    color: white;
-}
+
 

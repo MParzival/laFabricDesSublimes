@@ -8,10 +8,6 @@
     height: 230px;
     width: 230px;
 }
-/*.col-md-12 img{*/
-/*    height: 300px;*/
-/*    width: 300px;*/
-/*}*/
 .imgSublime{
     width: 300px;
     height: 300px;
@@ -147,7 +143,29 @@ section{
     width: 126px;
     height: 166px;
 }
-
+/* Page Creation */
+a img, .imgAvenir{
+    width: 200px;
+    height: 200px;
+}
+.imgCerisier{
+    display: none;
+}
+.imgFeuille{
+    display: none;
+}
+.imgHirondelle2{
+    display: none;
+}
+.imgOiseau{
+    display: none;
+}
+.imgMainMotif2{
+    display: none;
+}
+.imgFleur2{
+    display: none;
+}
 /* Page Commandez */
 
 .titreCommandez{
