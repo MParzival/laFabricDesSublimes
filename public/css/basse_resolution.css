@@ -117,6 +117,10 @@ section{
 .imgMainDroite{
     display: none;
 }
+.imageLogoCommandez{
+    width: 388px;
+    height: 364px;
+}
 .imgMainMotifGauche{
     display: none;
 }
