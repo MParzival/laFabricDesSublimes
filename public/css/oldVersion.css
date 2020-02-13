@@ -5,10 +5,6 @@
 .sociaux{
     margin: 0 30px 30px 30px;
 }
-
-
-
-
 .imgSublime{
     width: 320px;
     height: 320px;
@@ -187,99 +183,8 @@
     margin-left: 170px;
     z-index: -1;
 }
-.imgMainGauche{
-    position: absolute;
-    width: 150px;
-    margin-top: -140px;
-    margin-left: 145px;
-    z-index: -1;
-}
-.imgMainDroite{
-    position: absolute;
-    width: 150px;
-    margin-top: -275px;
-    margin-left: 805px;
-    z-index: -1;
-}
-.imgMainMotifGauche{
-    position: absolute;
-    width: 150px;
-    margin-top: -120px;
-    margin-left: 200px;
-    z-index: -1;
-}
-.imgEtoileDroite{
-    position: absolute;
-    width: 150px;
-    margin-top: -220px;
-    margin-left: 780px;
-    z-index: -1;
-}
-.theme, .technique, .support, .dimmension, .occasion{
-    font-weight: bold;
-    font-style: italic;
-}
-.theme{
-    color: #f28a3d;
-}
-.technique{
-    color: #e83f58;
-}
-.support{
-    color: #e83f58;
-}
-.dimmension{
-    color: #922159;
-}
-.occasion{
-    color: #2c2851;
-}
-.logoContact{
-    width: 300px;
-    height: 270px;
-}
-.titreContact{
-    color: #e83f58;
-    font-family: Elephant, serif;
-    font-weight: bold;
-}
-.listContact > li > span{
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.formEmailNomPrenom::placeholder{
-    color: #f28a3d;
-}
-.formEmailNomPrenom{
-    border: 3px dotted #f28a3d;
-}
-.formSujetPhone::placeholder{
-    color: #e83f58;
-}
-.formSujetPhone{
-    border: 3px dotted #e83f58;
-}
-.formFabric::placeholder{
-    color: #922159;
-}
-.formFabric{
-    border: 3px dotted #922159;
-}
-.formMessage::placeholder{
-    color: #2c2851;
-}
-.formMessage{
-    border: 3px dotted #2c2851;
-}
-.btn-fabric{
-    font-family: Elephant, serif;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #e83f58 ;
-    color: white;
-    float: right;
-}
+
+
 
 /****************/
 /*              */

@@ -4,11 +4,18 @@
 .elephant{
     font-size: 25px;
 }
-.col-lg-4 img{
+
+.col-md-12 img{
     height: 230px;
     width: 230px;
 }
-
+section{
+    margin-top: 30px;
+}
+.taille-image-accueil{
+    height: 230px;
+    width: 230px;
+}
 /* footer */
 .sociaux{
     margin: 30px 15px 30px 15px;
@@ -27,10 +34,7 @@
 .text-accueil{
     font-size: 15px;
 }
-.col-lg-4 img{
-    height: 230px;
-    width: 230px;
-}
+
 .pointEnBas{
     width: 300px;
     height: 12px;
@@ -44,8 +48,8 @@
 .imageMainTitre{
     display: none;
 }
-.titre{
-    position: relative;
+.titreSublimer{
+    position: static;
     top: 80px;
 }
 /*****************/
@@ -56,52 +60,42 @@
     float: right;
 }
 .titreParcour{
-    position: relative;
+    position: static;
     left: 50px;
     top: 120px;
 }
-.imgHirondelle{
-    display: none;
-}
 .imageHirondelle{
-    width: 150px;
-    height: 150px
-}
-/*****************/
-/* PAGE FABRIC section logo */
-/*****************/
-.br{
-    display: compact;
-}
-.img2Stars{
-    position: relative;
-    left: 40px;
-    width: 116px;
-    height: 156px;
-}
-.img1Stars{
-    position: relative;
-    float: right;
-    top: -200px;
-    right: 60px;
-    width: 80px;
-    height: 86px;
-}
-.titreLogo{
-    position: relative;
-    top: -100px;
-}
-.imgLogoSignification{
-    width: 642px; height: 485px
+   display: none;
 }
 /*****************/
 /* PAGE FABRIC section laFabricWhy */
 /*****************/
-.image3Stars{
+.titreWhyFabric{
+    position: static;
+}
+.imgLogo{
+    width: 365px;
+    height: 365px;
+}
+.img3Stars{
     display: none;
 }
-.parapheFabric{
-    margin-top: 300px;
+
+/*****************/
+/* PAGE FABRIC section logo */
+/*****************/
+.img2Stars{
+    display: none;
+}
+.img1Stars{
+    display: none;
+}
+.titreLogo{
+    position: static;
+}
+.imageLogoSignification > .imgLogoSignification{
+    width: 500px;
+    height: 380px;
 }
 /*****************/
 /* PAGE FABRIC section gestePlanete */
@@ -114,4 +108,37 @@
 /*****************/
 .imgMainMotif{
     display: none;
+}
+
+/* Page Commandez */
+.imgMainGauche{
+    display: none;
+}
+.imgMainDroite{
+    display: none;
+}
+.imgMainMotifGauche{
+    display: none;
+}
+.imgEtoileDroite{
+   display: none;
+}
+.theme, .technique, .support, .dimmension, .occasion{
+    font-weight: bold;
+    font-style: italic;
+}
+.theme{
+    color: #f28a3d;
+}
+.technique{
+    color: #e83f58;
+}
+.support{
+    color: #e83f58;
+}
+.dimmension{
+    color: #922159;
+}
+.occasion{
+    color: #2c2851;
 }

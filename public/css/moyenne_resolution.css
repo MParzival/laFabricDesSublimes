@@ -1,3 +1,32 @@
+/*****************/
+/*    General    */
+/*****************/
+.elephant{
+    font-size: 25px;
+}
+.col-lg-4 img{
+    height: 230px;
+    width: 230px;
+}
+/*.col-md-12 img{*/
+/*    height: 300px;*/
+/*    width: 300px;*/
+/*}*/
+.imgSublime{
+    width: 300px;
+    height: 300px;
+}
+section{
+    margin-top: 30px;
+}
+.taille-image-accueil{
+
+}
+
+/* footer */
+.sociaux{
+    margin: 30px 15px 30px 15px;
+}
 
 
 /*****************/
@@ -26,18 +55,16 @@
     float: left;
 }
 .imageMainTitre{
+    position: relative;
+    left: 200px;
     width: 120px;
     height: 120px
 }
-.titre{
+.titreSublimer{
     position: relative;
-    top: 80px;
+    top: 110px;
 }
-.imageMainEmotion{
-    position: relative;
-    left: 240px;
-    top: -20px;
-}
+
 
 /*****************/
 /* PAGE FABRIC section parcour */
@@ -47,27 +74,31 @@
     float: right;
 }
 .titreParcour{
+    display: inline;
     position: relative;
     left: 50px;
     top: 120px;
 }
-.imgHirondelle{
-    position: relative;
-    left: -20px;
-    top: -20px;
-}
 .imageHirondelle{
+    position: relative;
+    top: -30px;
     width: 150px;
     height: 150px
 }
 /*****************/
 /* PAGE FABRIC section laFabricWhy */
 /*****************/
-.image3Stars{
-    display: none;
+.img3Stars{
+    position: relative;
+    width: 152px;
+    height: 136px;
+    left: 240px;
 }
-.parapheFabric{
-    margin-top: 300px;
+.titreWhyFabric{
+    font-size: 20px;
+    top: 110px;
+    position: relative;
+    z-index: 1;
 }
 /*****************/
 /* PAGE FABRIC section logo */
@@ -77,21 +108,22 @@
 }
 .img2Stars{
     position: relative;
-    left: 40px;
+    top: 90px;
+    right: 15px;
     width: 116px;
     height: 156px;
 }
 .img1Stars{
     position: relative;
     float: right;
-    top: -200px;
-    right: 60px;
+    right: 20px;
+    top: -110px;
     width: 80px;
     height: 86px;
 }
 .titreLogo{
     position: relative;
-    top: -100px;
+    z-index: 1;
 }
 .imgLogoSignification{
     width: 700px; height: 500px
@@ -110,6 +142,60 @@
 /*****************/
 .imgMainMotif{
     position: relative;
-    top: 70px;
-    left: 100px;
+    top: 60px;
+    left: 120px;
+    width: 126px;
+    height: 166px;
+}
+
+/* Page Commandez */
+
+.titreCommandez{
+    position: relative;
+    top: -80px;
+    z-index: 1;
+}
+.imgMainGauche{
+    width: 129px;
+    height: 188px;
+}
+.imgMainDroite{
+    width: 129px;
+    height: 188px;
+    float: right;
+    display: inline;
+}
+.titreChoix{
+    position: relative;
+    top: -70px;
+    z-index: 1;
+}
+.imgMainMotifGauche{
+    left: 80px;
+}
+.imgEtoileDroite{
+    width: 157px;
+    height: 130px;
+    float: right;
+    top: -180px;
+    right: 30px;
+}
+.theme, .technique, .support, .dimmension, .occasion{
+    font-weight: bold;
+    font-style: italic;
+}
+.theme{
+    color: #f28a3d;
+}
+.technique{
+    color: #e83f58;
+}
+.support{
+    color: #e83f58;
+}
+.dimmension{
+    color: #922159;
+}
+.occasion{
+    color: #2c2851;
 }
