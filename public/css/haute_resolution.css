@@ -1,7 +1,11 @@
 /*    General    */
+@font-face{
+    font-family: "Elephant";
+    src: url("../font/13174_ELEPHNT.ttf");
+}
 .elephant{
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Elephant", serif;
 }
 .taille-image-accueil{
     width: 300px;
