@@ -1,3 +1,4 @@
+
 /*    General    */
 .elephant{
     font-size: 25px;
@@ -50,7 +51,7 @@ section{
 }
 .imageMainTitre{
     position: relative;
-    left: 300px;
+    left: 200px;
     width: 120px;
     height: 120px
 }

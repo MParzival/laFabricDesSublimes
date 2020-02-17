@@ -1,7 +1,4 @@
 /* Général */
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 section{
  padding: 5px;
 }
@@ -13,20 +10,12 @@ section{
 }
 /* Police */
 .elephant{
-    font-family: Elephant, serif;
-    font-weight: bold;
     font-size: 30px;
 }
-.segeoUI{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    font-size: 21px;
-}
+
 /* Barre de navigation */
 .navbar-nav{
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight:lighter ;
 }
 
 .bg-light{
@@ -47,7 +36,6 @@ section{
 
 .accueil{
     margin-top: 80px;
-    font-family: Elephant, serif;
     font-weight: bold;
     font-size: 30px;
 }
@@ -184,8 +172,6 @@ a img, .imgAvenir{
 }
 .titreContact{
     color: #e83f58;
-    font-family: Elephant, serif;
-    font-weight: bold;
 }
 .listContact > li > span{
     font-style: italic;
@@ -217,8 +203,6 @@ a img, .imgAvenir{
     border: 3px dotted #2c2851;
 }
 .btn-fabric{
-    font-family: Elephant, serif;
-    font-weight: bold;
     font-size: 20px;
     background-color: #e83f58 ;
     color: white;
