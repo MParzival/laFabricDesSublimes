@@ -1,14 +1,24 @@
 /*****************/
 /*    General    */
 /*****************/
+/* Police */
+@font-face {
+    font-family: "segeo";
+    src: url("../font/segoe-ui-4-cufonfonts/SegoeUI.ttf");
+}
+.segeoUI{
+    font-family: "segeo",sans-serif,cursive;
+    font-size: 20px;
+}
+@font-face{
+    font-family: "Elephant";
+    src: url("../font/13174_ELEPHNT.ttf");
+}
 .elephant{
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-family: "Elephant", serif;
 }
-.col-lg-4 img{
-    height: 230px;
-    width: 230px;
-}
+
 .imgSublime{
     width: 300px;
     height: 300px;
@@ -16,15 +26,11 @@
 section{
     margin-top: 30px;
 }
-.taille-image-accueil{
-
-}
 
 /* footer */
 .sociaux{
     margin: 30px 15px 30px 15px;
 }
-
 
 /*****************/
 /*    Accueil    */
@@ -40,9 +46,9 @@ section{
 .text-accueil{
     font-size: 15px;
 }
-.col-lg-4 img{
-    height: 230px;
+.taille-image-accueil{
     width: 230px;
+    height: 230px;
 }
 
 /*****************/

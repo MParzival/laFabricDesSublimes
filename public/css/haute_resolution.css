@@ -1,3 +1,23 @@
+/* FLEXBOX */
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+.imageSublime, .imageMoiEnfant, .imageLogo{
+    display: flex;
+    align-items: center;
+}
+.imageMoiEnfant{
+    order: 2;
+}
+
+/* Nav Creation */
+#navigation{
+    display: flex;
+}
+#peintureAcrylique{
+    margin-top: -100px;
+}
 /*    General    */
 @font-face{
     font-family: "Elephant";
@@ -7,27 +27,18 @@
     font-size: 25px;
     font-family: "Elephant", serif;
 }
-.taille-image-accueil{
-    width: 300px;
-    height: 300px;
-}
-.imgSublime{
-    width: 300px;
-    height: 300px;
-}
-section{
-    margin-top: 30px;
-}
-.taille-image-accueil{
 
+section{
+    margin-top: 100px;
 }
 
 /* footer */
-.sociaux{
-    margin: 30px 15px 30px 15px;
+footer{
+    margin-top: 80px;
 }
-
-
+.sociaux{
+    margin: 30px;
+}
 /*****************/
 /*    Accueil    */
 /*****************/
@@ -43,10 +54,11 @@ section{
 .text-accueil{
     font-size: 22px;
 }
-.col-lg-4 img{
-    height: 230px;
-    width: 230px;
+.taille-image-accueil{
+    width: 300px;
+    height: 300px;
 }
+
 
 /*****************/
 /* PAGE FABRIC section sublimer emotion */
@@ -64,7 +76,10 @@ section{
     position: relative;
     top: 110px;
 }
-
+.imgSublime{
+    width: 300px;
+    height: 300px;
+}
 
 /*****************/
 /* PAGE FABRIC section parcour */
@@ -92,8 +107,8 @@ section{
 /*****************/
 .img3Stars{
     position: relative;
-    width: 152px;
-    height: 136px;
+    width: 122px;
+    height: 106px;
     left: 440px;
 }
 .titreWhyFabric{
@@ -108,17 +123,17 @@ section{
 .img2Stars{
     position: relative;
     top: 90px;
-    left: 100px;
-    width: 116px;
-    height: 156px;
+    left: 120px;
+    width: 96px;
+    height: 126px;
 }
 .img1Stars{
     position: relative;
     float: right;
-    right: 130px;
+    right: 150px;
     top: -180px;
-    width: 80px;
-    height: 86px;
+    width: 60px;
+    height: 66px;
 }
 .titreLogo{
     position: relative;
@@ -134,7 +149,9 @@ section{
 .imgFleur{
     position: relative;
     top: 50px;
-    left: 220px;
+    left: 230px;
+    width: 130px;
+    height: 130px;
     z-index: -1;
 }
 /*****************/
@@ -170,7 +187,7 @@ a img, .imgAvenir{
     left: 300px;
 }
 .imgOiseau{
-    top: 65px;
+    top: 55px;
     left: 180px;
     width: 112px;
     height: 207px;
@@ -183,8 +200,10 @@ a img, .imgAvenir{
 }
 .imgFleur2{
     z-index: -1;
-    left: 200px;
-    top: 50px;
+    left: 220px;
+    top: 40px;
+    width: 160px;
+    height: 160px;
 }
 /* Page Commandez */
 
@@ -196,13 +215,13 @@ a img, .imgAvenir{
 .imgMainGauche{
     width: 129px;
     height: 188px;
-    left: 150px;
+    left: 200px;
 }
 .imgMainDroite{
     width: 129px;
     height: 188px;
     float: right;
-    right: 150px;
+    right: 200px;
 }
 
 .titreChoix{
@@ -211,11 +230,11 @@ a img, .imgAvenir{
     z-index: 1;
 }
 .imgMainMotifGauche{
-    left: 220px;
+    left: 270px;
 }
 .imgEtoileDroite{
-    width: 157px;
-    height: 130px;
+    width: 137px;
+    height: 110px;
     float: right;
     top: -180px;
     right: 220px;

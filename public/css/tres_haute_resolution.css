@@ -8,19 +8,8 @@
     font-size: 25px;
     font-family: "Elephant", serif;
 }
-.taille-image-accueil{
-    width: 300px;
-    height: 300px;
-}
-.imgSublime{
-    width: 300px;
-    height: 300px;
-}
 section{
     margin-top: 30px;
-}
-.taille-image-accueil{
-
 }
 
 /* footer */
@@ -43,9 +32,9 @@ section{
 .text-accueil{
     font-size: 15px;
 }
-.col-lg-4 img{
-    height: 230px;
-    width: 230px;
+.taille-image-accueil{
+    width: 350px;
+    height: 350px;
 }
 
 /*****************/
@@ -63,6 +52,10 @@ section{
 .titreSublimer{
     position: relative;
     top: 110px;
+}
+.imgSublime{
+    width: 300px;
+    height: 300px;
 }
 
 
