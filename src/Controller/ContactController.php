@@ -3,10 +3,13 @@
 namespace App\Controller;
 
 use App\Form\ContactType;
-use Swift_Mailer;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ContactController extends AbstractController
@@ -14,27 +17,26 @@ class ContactController extends AbstractController
     /**
      * @Route("/contact", name="app_contact")
      * @param Request $request
-     * @param Swift_Mailer $mailer
+     * @param MailerInterface $mailer
      * @return Response
+     * @throws TransportExceptionInterface
      */
-    public function index(Request $request, Swift_Mailer $mailer): Response
+    public function index(Request $request, MailerInterface $mailer): Response
     {
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()){
             $contact = $form->getData();
-
-            $message = (new \Swift_Message('Nouveau contact'))
-                ->setFrom($contact['email'])
-                ->setTo('mick.aubin@gmail.com')
-                ->setBody(
-                    $this->renderView(
-                        'email/contact.html.twig', compact('contact')
-                    ),
-                    'text/html'
-                )
+            $email= (new TemplatedEmail())
+                ->from($contact['email'])
+                ->to('mick.aubin@gmail.com')
+                ->htmlTemplate('email/contact.html.twig')
+                ->context([
+                    'contact' => $contact
+                ])
             ;
-            $mailer->send($message);
+            //dd($email);
+            $mailer->send($email);
 
             $this->addFlash('message', 'Votre message a bien été envoyer');
             return $this->redirectToRoute('app_home');

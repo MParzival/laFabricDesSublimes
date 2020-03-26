@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ mickaubifn@ssh.cluster027.hosting.ovh.net:~/laFabricDesSublimes --include=public --include=vendor --include=public/.htaccess --exclude-from=.gitignore --exclude=".*"

@@ -1,8 +1,8 @@
-<h1>Nouveau contact</h1>
-<p>Email : {{ contact.email }}</p>
-<p>Nom : {{ contact.nom }}</p>
-<p>Prénom : {{ contact.prenom }}</p>
-<p>Téléphone : {{ contact.phone }}</p>
-<p>Sujet de la demande : {{ contact.sujet }}</p>
-<p>Comment avez-vous connus La Fabric des Sublimés : {{ contact.fabric }}</p>
-<p>Message : {{ contact.message }}</p>
+<div style="text-align: center">
+    <h1>Nouveau message de la part <i>{{ contact.nom }}</i></h1>
+    <p><u><b>Email :</b></u> {{ contact.email }}</p>
+    <p><u><b>Téléphone :</b></u> {{ contact.phone }}</p>
+    <p><u><b>Sujet de la demande :</b></u> {{ contact.sujet }}</p>
+    <p><u><b>Comment avez-vous connus La Fabric des Sublimés :</b></u> {{ contact.fabric }}</p>
+    <p><u><b>Message :</b></u> {{ contact.message }}</p>
+</div>
