@@ -1,99 +1,176 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Page création{% endblock %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/creation.css')}}">
+{% endblock %}
 {% block body %}
-<section id="navigation">
-    <div class="container-fluid fixed-top">
-        <ul class="nav flex-column justify-content-center">
-            <li><a type="button" class="btn btn-sm" href="#peintureAcrylique">Imaginarium</a></li>
-            <li><a type="button" class="btn btn-sm" href="#paysageFascinant">Paysage fascinant</a></li>
-            <li><a type="button" class="btn btn-sm" href="#animalOnirique">Animal onirique</a></li>
-            <li><a type="button" class="btn btn-sm" href="#animalDivin">Animal divin</a></li>
-            <li><a type="button" class="btn btn-sm" href="#portrait">Portraits et compositions</a></li>
-            <li><a type="button" class="btn btn-sm" href="#broderie">La broderie des merveilles</a></li>
-        </ul>
-    </div>
-</section>
 <section id="peintureAcrylique">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <img src="{{ asset('img/laFabricDesSublimes/cerisiertitre1.jpg') }}" class="imgCerisier" alt="imageCerisier">
-                    <h2 class="elephant text-center">La peinture acrylique «L’imaginarium (compositions)»</h2>
-                    <p class="text-center segeoUI mt-4">
-                        Créations de mondes imaginaires sublimés par l’intensité artistique de vos envies.
-                        <br><span class="span">Les oeuvres présentées ici sont des projets déjà réalisés et uniques,
-                        ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="flex text-center">
-
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre1ORIGINALE.jpg') }}" class="img-fluid" alt="">
-
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre1ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique0" >
-
-
-
-
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre2ORGINALE.jpg') }}" class="essai" alt="CreationAcrylique1">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre3ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique2">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre4ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique3">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre5ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique4">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre6ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique5">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre7ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique6">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre8ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique7">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre9ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique8">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre10ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique9">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre11ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique10">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre12ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique11">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre13ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique12">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre14ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique13">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre15ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique14">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre16ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique15">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre17ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique16">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre18ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique17">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre19ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique18">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre20ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique19">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre21ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique20">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre22ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique21">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre23ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique22">
-                <img src="{{ asset('img/pageCreationAcryliqueImaginerium/oeuvre24ORIGINALE.jpg') }}" class="essai" alt="CreationAcrylique23">
-
-            </div>
-        </div>
-</section>
-<section id="paysageFascinant">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/feuilleTitre.png') }}" class="imgFeuille" alt="imageFeuille">
-                <h2 class="elephant text-center"> La peinture acrylique «Paysage fascinant»</h2>
-                <p class="text-center segeoUI mt-5">
-                    Créations de paysages envoûtants et colorés.
+                <img src="{{ asset('img/cerisiertitre1.jpg') }}" class="imgCerisier" alt="imageCerisier">
+                <h2 class="elephant text-center">La peinture acrylique «L’imaginarium (compositions)»</h2>
+                <p class="text-center segeoUI mt-4">
+                    Créations de mondes imaginaires sublimés par l’intensité artistique de vos envies.
                     <br><span class="span">Les oeuvres présentées ici sont des projets déjà réalisés et uniques,
                         ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
                 </p>
             </div>
         </div>
-        <div class="flex">
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage1ORIGINLALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage1Rond.jpg') }}" alt="imagePaysage0" ></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage2ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage2Rond.jpg') }}" alt="imagePaysage1"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage3ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage3Rond.jpg') }}" alt="imagePaysage2"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage4ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage4Rond.jpg') }}" alt="imagePaysage3"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage5ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage5Rond.jpg') }}" alt="imagePaysage4"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage6ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage6Rond.jpg') }}" alt="imagePaysage5"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage7ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage7Rond.jpg') }}" alt="imagePaysage6"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage8ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage8Rond.jpg') }}" alt="imagePaysage7"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage9ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage9Rond.jpg') }}" alt="imagePaysage8"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage1ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage10Rond.jpg') }}" alt="imagePaysage9"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage11ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage11Rond.jpg') }}" alt="imagePaysage10"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage12ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage12Rond.jpg') }}" alt="imagePaysage11"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage13ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage13Rond.jpg') }}" alt="imagePaysage12"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage14ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage14Rond.jpg') }}" alt="imagePaysage13"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage15ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage15Rond.jpg') }}" alt="imagePaysage14"></a>
-            <a href="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage16ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAcryliquePaysageFascinant/paysage16Rond.jpg') }}" alt="imagePaysage15"></a>
+        <div class="flex text-center">
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre1.jpg') }}" class="petite" alt="Oeuvre pour Cassandre. Sur toile : 41 x 33 cm." >
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Cassandre. <br> Sur toile : 41 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre2.jpg') }}" class="petite" alt="Oeuvre pour Léonie. Sur toile : 41 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Léonie. <br> Sur toile : 41 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre3.jpg') }}" class="petite" alt="Oeuvre pour Nina. Sur toile : 41 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Nina. <br> Sur toile : 41 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre4.jpg') }}" class="petite" alt="Oeuvre pour Théo. Sur toile : 40 x 40 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Théo. <br> Sur toile : 40 x 40 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre5.jpg') }}" class="petite" alt="Oeuvre pour Lilou. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Lilou. <br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre6.jpg') }}" class="petite" alt="Oeuvre pour Paul . Sur toile : 41 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Paul. <br> Sur toile : 41 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre7.jpg') }}" class="petite" alt="Oeuvre pour Jules. Sur toile : 41 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Jules. <br> Sur toile : 41 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre8.jpg') }}" class="petite" alt="Oeuvre pour Jade sur toile : 61 x 46 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Jade. <br> Sur toile : 61 x 46 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre9.jpg') }}" class="petite" alt="Oeuvre pour Nael . Sur toile : 61 x 46 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Nael. <br> Sur toile : 61 x 46 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre10.jpg') }}" class="petite" alt="Oeuvre pour Manon. Sur toile : 30 x 30 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Manon. <br> Sur toile : 30 x 30 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre11.jpg') }}" class="petite" alt="Oeuvre pour Manon. Sur toile : 30 x 30 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Manon. <br> Sur toile : 30 x 30 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre12.jpg') }}" class="petite" alt="Oeuvre pour Manon. Sur toile : 30 x 30 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Manon. <br> Sur toile : 30 x 30 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre13.jpg') }}" class="petite" alt="Oeuvre pour Cassandre. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Cassandre. <br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre14.jpg') }}" class="petite" alt="Oeuvre pour Léa. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Léa. <br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre15.jpg') }}" class="petite" alt="Oeuvre pour des grands-parents . Sur toile : 65 x 50 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre grands-parents. <br> Sur toile : 65 x 50 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre16.jpg') }}" class="petite" alt="Oeuvre pour Ian. Sur toile : 41 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Ian. <br> Sur toile : 41 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre17.jpg') }}" class="petite" alt="Oeuvre pour Élena . Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Élena.<br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre18.jpg') }}" class="petite" alt="Oeuvre pour Lina. Sur toile : 55 x 38 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Lina.<br> Sur toile : 55 x 38 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre19.jpg') }}" class="petite" alt="Oeuvre pour Milan. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Milan.<br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre20.jpg') }}" class="petite" alt="Oeuvre pour Élena . Sur toile : 73 x 50 cm. (format demandé).">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Élena .<br> Sur toile : 73 x 50 cm. (format demandé).</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre21.jpg') }}" class="petite" alt="Oeuvre pour Éléna. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Éléna.<br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre22.jpg') }}" class="petite" alt="Oeuvre pour Thibaut. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Thibaut.<br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre23.jpg') }}" class="petite" alt="Oeuvre pour Leslie. Sur toile : 46 x 33 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Leslie.<br> Sur toile : 46 x 33 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre24.jpg') }}" class="petite" alt="Oeuvre pour Marc. Sur toile : 65 x 54 cm.">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Marc.<br> Sur toile : 65 x 54 cm.</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/oeuvre25.jpg') }}" class="petite" alt="Oeuvre pour Tom sur toile 65cm par 54 cm">
+                <div class="overlay">
+                    <div class="text">Oeuvre pour Tom.<br> Sur toile 65cm x 54 cm</div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>
@@ -101,21 +178,47 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="{{ asset('img/pageCreationAnimalOnirique/hirondelleTitre.jpg') }}" class="imgHirondelle2" alt="imageHirondelle">
+                <img src="{{ asset('img/hirondelleTitre.jpg') }}" class="imgHirondelle2" alt="imageHirondelle">
                 <h2 class="elephant text-center">L’aquarelle «Animal onirique»</h2>
                 <p class="text-center segeoUI mt-5">
                     Créations de portraits d’animaux dans un monde onirique, végétal et graphique.
                     <br><span class="span">Les oeuvres présentées ici sont des projets déjà réalisés et uniques,
-                        ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
+                ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
                 </p>
             </div>
         </div>
         <div class="flex">
-            <a href="{{ asset('img/pageCreationAnimalOnirique/animal1ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAnimalOnirique/animal1Rond.jpg') }}" alt="animalOnirique0" ></a>
-            <a href="{{ asset('img/pageCreationAnimalOnirique/animal2ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAnimalOnirique/animal2Rond.jpg') }}" alt="animalOnirique1"></a>
-            <a href="{{ asset('img/pageCreationAnimalOnirique/animal3ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAnimalOnirique/animal3Rond.jpg') }}" alt="animalOnirique2"></a>
-            <a href="{{ asset('img/pageCreationAnimalOnirique/animal4ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationAnimalOnirique/animal4Rond.jpg') }}" alt="animalOnirique3"></a>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal1.jpg') }}" class="petite" alt="Mon chat divin." >
+                <div class="overlay">
+                    <div class="text">Mon chat divin. <br> Papier épais aquarelle. <br> Format : 20 x 40 cm</div>
+                </div>
             </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal2.jpg') }}" class="petite" alt="L’ours sur la colline." >
+                <div class="overlay">
+                    <div class="text">L’ours sur la colline. <br> Papier épais aquarelle. <br> Format : 20 x 40 cm</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal3.jpg') }}" class="petite" alt="Le guépard dans la tête." >
+                <div class="overlay">
+                    <div class="text">Le guépard dans la tête. <br> Papier épais aquarelle. <br> Format : 20 x 40 cm</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal4.jpg') }}" class="petite" alt="L'hirondelle dans le cerisier." >
+                <div class="overlay">
+                    <div class="text">L'hirondelle dans le cerisier. <br> Papier épais aquarelle. <br> Format : 20 x 40 cm</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal17.jpg') }}" class="petite" alt="L’oiseau cocon." >
+                <div class="overlay">
+                    <div class="text">L’oiseau cocon. <br> Papier épais aquarelle. <br> Format : 20 x 40 cm</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -123,28 +226,94 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/oiseauTitre.jpg') }}" class="imgOiseau" alt="imageOiseau">
+                <img src="{{ asset('img/oiseauTitre.jpg') }}" class="imgOiseau" alt="imageOiseau">
                 <h2 class="elephant text-center">L’encre de chine et l’encre aquarelle «Animal divin»</h2>
                 <p class="text-center segeoUI mt-5">
                     Créations de portraits d’animaux dans une harmonie graphique et colorée.
-                    <br><span class="span">Les oeuvres présentées ici sont des projets déjà réalisés et uniques,
-                    ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
+                    <br><span class="span">Certaines oeuvres présentées ici sont disponibles à la vente avec un certificat d’authenticité.</span>
                 </p>
             </div>
         </div>
         <div class="flex">
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal5ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal5Rond.jpg') }}" alt="animalDivin0" ></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal6ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal6Rond.jpg') }}" alt="animalDivin1"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal7ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal7Rond.jpg') }}" alt="animalDivin2"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal8ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal8Rond.jpg') }}" alt="animalDivin3"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal9ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal9Rond.jpg') }}" alt="animalDivin4" ></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal10ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal10Rond.jpg') }}" alt="animalDivin5"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal11ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal11Rond.jpg') }}" alt="animalDivin6"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal12ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal12Rond.jpg') }}" alt="animalDivin7"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal13ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal13Rond.jpg') }}" alt="animalDivin8" ></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal14ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal14Rond.jpg') }}" alt="animalDivin9"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal15ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal15Rond.jpg') }}" alt="animalDivin10"></a>
-            <a href="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal16ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationEncreChineAnimalDIvin/animal16Rond.jpg') }}" alt="animalDivin11"></a>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal5.jpg') }}" class="petite" alt="Le cerf." >
+                <div class="overlay">
+                    <div class="text">Le cerf. <br> Papier médium. <br> Format : A4</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal6.jpg') }}" class="petite" alt="Le couple de cigognes." >
+                <div class="overlay">
+                    <div class="text">Le couple de cigognes. <br> Papier médium. <br> Format A3</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal7.jpg') }}" class="petite" alt="La girafe." >
+                <div class="overlay">
+                    <div class="text">La girafe. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal8.jpg') }}" class="petite" alt="La tortue marine." >
+                <div class="overlay">
+                    <div class="text">La tortue marine. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal9.jpg') }}" class="petite" alt="La mouette." >
+                <div class="overlay">
+                    <div class="text">La mouette. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal10.jpg') }}" class="petite" alt="Le martin-pêcheur." >
+                <div class="overlay">
+                    <div class="text">Le martin-pêcheur. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal11.jpg') }}" class="petite" alt="La mésange." >
+                <div class="overlay">
+                    <div class="text">La mésange. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal12.jpg') }}" class="petite" alt="L’ ours polaire." >
+                <div class="overlay">
+                    <div class="text">L’ ours polaire. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal13.jpg') }}" class="petite" alt="Le flament rose." >
+                <div class="overlay">
+                    <div class="text">Le flament rose. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal14.jpg') }}" class="petite" alt="Le léopard." >
+                <div class="overlay">
+                    <div class="text">Le léopard. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal15.jpg') }}" class="petite" alt="Le chacal." >
+                <div class="overlay">
+                    <div class="text">Le chacal. <br> Papier médium. <br> Format A3</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/animal16.jpg') }}" class="petite" alt="L’aigle royal." >
+                <div class="overlay">
+                    <div class="text">L’aigle royal. <br> Papier médium. <br> Format A4</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -152,28 +321,94 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/mainMotifTitre.jpg') }}" class="imgMainMotif2" alt="imageMainMotif">
-                <h2 class="elephant text-center"> Le crayon de papier, stylo encre, encre de chine et aquarelle <br> «Portraits et compositions»</h2>
+                <img src="{{ asset('img/mainMotifTitre.jpg') }}" class="imgMainMotif2" alt="imageMainMotif">
+                <h2 class="elephant text-center"> Le crayon de papier, stylo encre, encre de chine et aquarelle <br> «Dessins fabuleux»</h2>
                 <p class="text-center segeoUI mt-5">
                     Créations de portraits, de compositions imaginaires, de tatouage et de dessins fabuleux.
                     <br><span class="span">Les oeuvres présentées ici sont des projets déjà réalisés et uniques,
-                    ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
+                ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
                 </p>
             </div>
         </div>
         <div class="flex">
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait1ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait1Rond.jpg') }}" alt="portrait1" ></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait2ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait2Rond.jpg') }}" alt="portrait2"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait3ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait3Rond.jpg') }}" alt="portrait3"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait4ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait4Rond.jpg') }}" alt="portrait4"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait5ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait5Rond.jpg') }}" alt="portrait5" ></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait6ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait6Rond.jpg') }}" alt="portrait6"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait7ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait7Rond.jpg') }}" alt="portrait7"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait8ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait8Rond.jpg') }}" alt="portrait8"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait9ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait9Rond.jpg') }}" alt="portrait9" ></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait10ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait10Rond.jpg') }}" alt="portrait10"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait11ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait11Rond.jpg') }}" alt="portrait11"></a>
-            <a href="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait12ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationCrayonPapierPortraitComposition/portrait12Rond.jpg') }}" alt="portrait12"></a>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait5.jpg') }}" class="petite" alt="Pour Émilie." >
+                <div class="overlay">
+                    <div class="text">Pour Émilie.<br>Papier fin.<br> Format A4 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait6.jpg') }}" class="petite" alt="Pour Romain." >
+                <div class="overlay">
+                    <div class="text">Pour Romain.<br>Papier fin.<br> Format A4 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait7.jpg') }}" class="petite" alt="Tatouage pour Flory" >
+                <div class="overlay">
+                    <div class="text">Tatouage pour Flory<br>Papier fin.<br> 25 cm de long </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait8.jpg') }}" class="petite" alt="Tatouage pour Flory2" >
+                <div class="overlay">
+                    <div class="text">Tatouage pour Flory<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait1.jpg') }}" class="petite" alt="Agnès(ma grand-mère)" >
+                <div class="overlay">
+                    <div class="text">Agnès(ma grand-mère)<br>cheveux au vent.<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait2.jpg') }}" class="petite" alt="Agnès(ma grand-mère) sublime." >
+                <div class="overlay">
+                    <div class="text">Agnès(ma grand-mère) sublime.<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait3.jpg') }}" class="petite" alt="Oliva (ma grand-mère) séduisante." >
+                <div class="overlay">
+                    <div class="text">Oliva (ma grand-mère) séduisante.<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait4.jpg') }}" class="petite" alt="Aldo (mon grand-père) séduisant." >
+                <div class="overlay">
+                    <div class="text">Aldo (mon grand-père) séduisant.<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait9.jpg') }}" class="petite" alt="Phoenix." >
+                <div class="overlay">
+                    <div class="text">Phoenix.<br>Papier fin.<br> Format A5 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait10.jpg') }}" class="petite" alt="Les retrouvailles." >
+                <div class="overlay">
+                    <div class="text">Les retrouvailles.<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait11.jpg') }}" class="petite" alt="Extrait du manga de Pierre." >
+                <div class="overlay">
+                    <div class="text">Extrait du manga de Pierre.<br>Papier fin.<br> Format A5 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait12.jpg') }}" class="petite" alt="Extrait du manga de Pierre. le retour" >
+                <div class="overlay">
+                    <div class="text">AExtrait du manga de Pierre.<br>Papier fin.<br> Format A6 </div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/portrait13.jpg') }}" class="petite" alt="Une demande particulière." >
+                <div class="overlay">
+                    <div class="text">Une demande particulière.<br>Papier fin.<br> Format A3 </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -181,29 +416,204 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="{{ asset('img/pageCreationBroderieMerveille/fleurTitre.jpg') }}" class="imgFleur2" alt="imageFleur">
+                <img src="{{ asset('img/fleurTitre.jpg') }}" class="imgFleur2" alt="imageFleur">
                 <h2 class="elephant text-center">La broderie des merveilles</h2>
                 <p class="text-center segeoUI">
                     Créations figuratives ou abstraites, en accessoire de mode (broche, casquette)
                     ou décoration murale (dessin simple et/ou prénom ou mots brodés).<br> Broder un petit bout
                     de paysage ou avoir un être cher près de votre coeur sublimera votre quotidien.
-                    <br><span class="span">Les oeuvres présentées ici sont des projets déjà réalisés et uniques,
-                    ils ne sont pas à la vente mais vous montrent la qualité de mon travail d’artiste.</span>
+                    <br><span class="span">Certaines oeuvres présentées ici sont disponibles à la vente avec un certificat d’authenticité.</span>
                 </p>
             </div>
         </div>
         <div class="flex">
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie1ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie1Rond.jpg') }}" alt="broderie1" ></a>
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie2ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie2Rond.jpg') }}" alt="broderie2"></a>
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie3ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie3Rond.jpg') }}" alt="broderie3"></a>
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie4ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie4Rond.jpg') }}" alt="broderie4"></a>
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie5ORIGINALE.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie5Rond.jpg') }}" alt="broderie5" ></a>
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie6imageoriginal.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie6.jpg') }}" alt="broderie6" ></a>
-            <a href="{{ asset('img/pageCreationBroderieMerveille/broderie7imageoriginal.jpg') }}" target="_blank"><img src="{{ asset('img/pageCreationBroderieMerveille/broderie7.jpg') }}" alt="broderie7" ></a>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie1.jpg') }}" class="petite" alt="Une demande particulière." >
+                <div class="overlay">
+                    <div class="text">Casquette brodée, initiale</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie2.jpg') }}" class="petite" alt="Casquette brodée, message" >
+                <div class="overlay">
+                    <div class="text">Casquette brodée, message</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie3.jpg') }}" class="petite" alt="Broche Mo le chat." >
+                <div class="overlay">
+                    <div class="text">Broche Mo le chat.<br>Doublée imitation cuir</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie4.jpg') }}" class="petite" alt="broche Agnès forever." >
+                <div class="overlay">
+                    <div class="text">broche Agnès forever.<br>Doublée imitation cuir</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie5.jpg') }}" class="petite" alt="Broderie de l’imaginaire" >
+                <div class="overlay">
+                    <div class="text">Broderie de l’imaginaire</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie6.jpg') }}" class="petite" alt="Broche Oliva forever." >
+                <div class="overlay">
+                    <div class="text">Broche Oliva forever.<br>Doublée imitation cuir</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie7.jpg') }}" class="petite" alt="Broche Dexter my cat." >
+                <div class="overlay">
+                    <div class="text">Broche Dexter my cat.<br>Doublée imitation cuir</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie8.jpg') }}" class="petite" alt="Broche Maison bucolique." >
+                <div class="overlay">
+                    <div class="text">Broche Maison bucolique.<br>Doublée imitation cuir</div>
+                </div>
+            </div>
+
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie9.jpg') }}" class="petite" alt="Broche Tom électrise." >
+                <div class="overlay">
+                    <div class="text">Broche Tom électrise.<br>Doublée imitation cuir</div>
+                </div>
+            </div>
+            <div class="overlayLightBox">
+                <img src="{{ asset('img/petites/broderie10.jpg') }}" class="petite" alt="Décoration murale «Dessin d’enfant»" >
+                <div class="overlay">
+                    <div class="text">Décoration murale<br>«Dessin d’enfant»<br>Doublée imitation cuir</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<section id="paysageFascinant">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="{{ asset('img/feuilleTitre.png') }}" class="imgFeuille" alt="imageFeuille">
+                    <h2 class="elephant text-center"> La peinture acrylique «Paysage fascinant»</h2>
+                    <p class="text-center segeoUI mt-5">
+                        Créations de paysages envoûtants et colorés.
+                        <br><span class="span">Certaines oeuvres présentées ici sont disponibles à la vente avec un certificat d’authenticité.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage13.jpg') }}" class="petite" alt="Un cerisier à la maison." >
+                    <div class="overlay">
+                        <div class="text">Un cerisier à la maison. <br> Sur toile : 100 x 65 cm</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage14.jpg') }}" class="petite" alt="Mon paradis d’inspiration." >
+                    <div class="overlay">
+                        <div class="text">Mon paradis d’inspiration. <br> Sur toile : 100 x 65 cm</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage15.jpg') }}" class="petite" alt="Lac Léman." >
+                    <div class="overlay">
+                        <div class="text">Lac Léman. <br> Sur toile : 46 x 55 cm</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage1.jpg') }}" class="petite" alt="Maisons de charme. Papier semi-épais. Format : 25,5 x 25,5 cm." >
+                    <div class="overlay">
+                        <div class="text">Maisons de charme. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage2.jpg') }}" class="petite" alt="Terre vivante. Papier semi-épais. Format : 25,5 x 25,5 cm." >
+                    <div class="overlay">
+                        <div class="text">Terre vivante. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage3.jpg') }}" class="petite" alt="Cascade du jour" >
+                    <div class="overlay">
+                        <div class="text">Cascade du jour. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage4.jpg') }}" class="petite" alt="Tendance automnale" >
+                    <div class="overlay">
+                        <div class="text">Tendance automnale. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage5.jpg') }}" class="petite" alt="Ciel romantique." >
+                    <div class="overlay">
+                        <div class="text">Ciel romantique. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage6.jpg') }}" class="petite" alt="Espace glamour." >
+                    <div class="overlay">
+                        <div class="text">Espace glamour. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage7.jpg') }}" class="petite" alt="Horizon abstraite." >
+                    <div class="overlay">
+                        <div class="text">Horizon abstraite. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage8.jpg') }}" class="petite" alt="Sous-bois cosmique." >
+                    <div class="overlay">
+                        <div class="text">Sous-bois cosmique. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage9.jpg') }}" class="petite" alt="Maison bucolique." >
+                    <div class="overlay">
+                        <div class="text">Maison bucolique. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage10.jpg') }}" class="petite" alt="L’arbre blanc." >
+                    <div class="overlay">
+                        <div class="text">L’arbre blanc. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage11.jpg') }}" class="petite" alt="Mars." >
+                    <div class="overlay">
+                        <div class="text">Mars. <br> Papier semi-épais. <br> Format : 25,5 x 25,5 cm.</div>
+                    </div>
+                </div>
+                <div class="overlayLightBox">
+                    <img src="{{ asset('img/petites/paysage12.jpg') }}" class="petite" alt="Douceur d’automne. " >
+                    <div class="overlay">
+                        <div class="text">Douceur d’automne. <br> Papier semi-épais. Format : 25,5 x 25,5 cm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="grande"></div>
 {% endblock %}
 
 {% block javascripts %}
+<script>
+    $(function () {
+        $(".petite").click(function () {
+            var SourcePetiteImage = $(this).attr('src');
+            var SourceGrandeImage = SourcePetiteImage.replace("petites", "grandes");
+            $(".grande").html("<img src='" + SourceGrandeImage + "'>");
+            $(".grande").fadeIn("slow").css("display", "flex");
+        });
+
+        $(".grande").click(function () {
+            $(".grande").fadeOut("slow");
+        });
+    });
+</script>
 {% endblock %}

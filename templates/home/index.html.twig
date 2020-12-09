@@ -1,60 +1,63 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}La fabric des sublimés, c'est qui & c'est quoi ?{% endblock %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/home.css')}}">
+{% endblock %}
 {% block body %}
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <img src="{{ asset('img/Accueil/logo1.jpg')}}" alt="logoLaFabricDesSublimes" class="logoLaFabricDesSublimes">
+                    <img src="{{ asset('img/logo1.jpg')}}" alt="logoLaFabricDesSublimes" class="logoLaFabricDesSublimes">
                 </div>
             </div>
         </div>
     </div>
 
 
-<div class="text-center">
-    <div class="container">
-        <div class="row p-5">
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image1.jpg')}}" class="taille-image-accueil" alt="imageHomePage0">
+    <div class="text-center">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image1.jpg')}}" class="taille-image-accueil" alt="imageHomePage0">
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image2.jpg')}}" class="taille-image-accueil" alt="imageHomePage1">
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image3.jpg')}}" class="taille-image-accueil" alt="imageHomePage2">
+                </div>
             </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image2.jpg')}}" class="taille-image-accueil" alt="imageHomePage1">
+            <div class="row p-5">
+                <div class="col-lg-4 col-md-4 titre-accueil">
+                    <img src="{{ asset('img/image8.jpg')}}" class="taille-image-accueil imageHome" alt="imageHomePage3">
+                </div>
+                <div class="col-lg-4 col-md-4 titre-accueil">
+                    <h2 class="accueil">Sublimer votre univers</h2>
+                    <p class="text-accueil m-0">Votre Créatrice sur mesure</p>
+                    <p class="text-accueil m-0">Sublime</p>
+                    <p class="text-accueil m-0">Votre univers en oeuvre d'art.</p>
+                    <p class="text-accueil m-0">(peinture, dessin, broderie et logo)</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image4.jpg')}}" class="taille-image-accueil imageHome" alt="imageHomePage4">
+                </div>
             </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image3.jpg')}}" class="taille-image-accueil" alt="imageHomePage2">
+            <div class="row p-5">
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image7.jpg')}}" class="taille-image-accueil" alt="imageHomePage5">
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image6.jpg')}}" class="taille-image-accueil" alt="imageHomePage6">
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="{{ asset('img/image5.jpg')}}" class="taille-image-accueil" alt="imageHomePage7">
+                </div>
             </div>
+
         </div>
-        <div class="row p-5">
-            <div class="col-lg-4 col-md-4 titre-accueil">
-                <img src="{{ asset('img/Accueil/image8.jpg')}}" class="taille-image-accueil" alt="imageHomePage3">
-            </div>
-            <div class="col-lg-4 col-md-4 titre-accueil">
-                <h2 class="accueil">Sublimer votre univers</h2>
-                <p class="text-accueil m-0">Votre Créatrice sur mesure</p>
-                <p class="text-accueil m-0">Sublime</p>
-                <p class="text-accueil m-0">Votre univers en oeuvre d'art.</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image4.jpg')}}" class="taille-image-accueil" alt="imageHomePage4">
-            </div>
-        </div>
-        <div class="row p-5">
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image7.jpg')}}" class="taille-image-accueil" alt="imageHomePage5">
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image6.jpg')}}" class="taille-image-accueil" alt="imageHomePage6">
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <img src="{{ asset('img/Accueil/image5.jpg')}}" class="taille-image-accueil" alt="imageHomePage7">
-            </div>
-        </div>
-        
     </div>
-</div>
 
 
 {% endblock %}

@@ -1,13 +1,14 @@
 /* Général */
+body{
+    background-color: #fdfdfd;
+}
 section{
  padding: 5px;
 }
 .titre-center{
     text-align: center;
 }
-#navigation{
-    display: none;
-}
+
 /* Police */
 @font-face {
     font-family: "segeo";
@@ -26,144 +27,7 @@ section{
     font-family: "Elephant", serif;
 }
 
-/* Barre de navigation */
-.navbar-nav{
-    font-size: 16px;
-    font-family: "segeo",sans-serif,cursive;
-}
 
-.bg-light{
-    background-color: white !important;
-}
-.nav-link{
-    text-transform: uppercase;
-    border-bottom: 4px dotted #ffe6ee;
-    margin: 0 20px;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-    border-bottom: 6px dotted #ff99bb;
-}
-.active{
-    border-bottom: 6px dotted #80002a;
-}
-/* Page Accueil */
-
-.accueil{
-    margin-top: 80px;
-    font-weight: bold;
-    font-size: 30px;
-}
-.text-accueil{
-    margin-top: 15px;
-    font-size: 20px;
-}
-.taille-image-accueil{
-    width: 350px;
-    height: 350px;
-}
-
-/* Footer */
-.logo-bas{
-    width: 180px;
-    height: 120px;
-}
-i{
-    font-size: 40px;
-    color: black;
-}
-.list-group-item{
-    margin: 0 10px 10px 0;
-    border: none;
-}
-.sociaux{
-    margin: 0 30px 30px 30px;
-}
-/* Page Commandez */
-.imgMainGauche{
-    position: relative;
-}
-.imgMainDroite{
-    position: relative;
-}
-.imgMainMotifGauche{
-    position: relative;
-}
-.imgEtoileDroite{
-    position: relative;
-}
-.theme, .technique, .support, .dimmension, .occasion{
-    font-weight: bold;
-    font-style: italic;
-}
-.theme{
-    color: #f28a3d;
-}
-.technique{
-    color: #e83f58;
-}
-.support{
-    color: #e83f58;
-}
-.dimmension{
-    color: #922159;
-}
-.occasion{
-    color: #2c2851;
-}
-/* Page Creation */
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-a img, .imgAvenir{
-    width: 250px;
-    height: 250px;
-}
-.span{
-    color: red;
-    font-size: 9px;
-}
-.imgCerisier{
-    position: relative;
-    top: 50px;
-    left: 150px;
-    z-index: -1;
-}
-.imgFeuille{
-    position: relative;
-    top: 80px;
-    left: 140px;
-    z-index: -1;
-}
-.imgHirondelle2{
-    position: relative;
-    width: 205px;
-    height: 235px;
-    z-index: -1;
-    top: 65px;
-    left: 280px;
-}
-.imgOiseau{
-    position: relative;
-    top: 65px;
-    left: 140px;
-    width: 112px;
-    height: 207px;
-    z-index: -1;
-}
-.imgMainMotif2{
-    position: relative;
-    z-index: -1;
-    top: 80px;
-    left: 80px;
-}
-.imgFleur2{
-    position: relative;
-    z-index: -1;
-    left: 190px;
-    top: 50px;
-}
 /****************/
 /*              */
 /* nav Creation */
@@ -182,57 +46,4 @@ a img, .imgAvenir{
 .btn:hover{
     background-color: #922159;
     color: white;
-}
-/* Page Contact */
-.logoContact{
-    width: 300px;
-    height: 270px;
-}
-.titreContact{
-    color: #e83f58;
-}
-.listContact > li > span{
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.formEmailNomPrenom::placeholder{
-    color: #f28a3d;
-}
-.formEmailNomPrenom{
-    border: 3px dotted #f28a3d;
-}
-.formSujetPhone::placeholder{
-    color: #e83f58;
-}
-.formSujetPhone{
-    border: 3px dotted #e83f58;
-}
-.formFabric::placeholder{
-    color: #922159;
-}
-.formFabric{
-    border: 3px dotted #922159;
-}
-.formMessage::placeholder{
-    color: #2c2851;
-}
-.formMessage{
-    border: 3px dotted #2c2851;
-}
-.btn-fabric{
-    font-size: 20px;
-    background-color: white ;
-    border: 2px solid #e83f58;
-    color: #e83f58;
-    float: right;
-    background-image: linear-gradient(to right, transparent 50%, #e83f58 50%, #922159);
-    background-size: 200%;
-    cursor: pointer;
-    transition: 0.4s ease-out;
-}
-
-.btn-fabric:hover{
-    background-position: 100%;
-    border: 2px solid #922159;
 }

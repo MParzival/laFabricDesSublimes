@@ -1,13 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Contactez la fabric{% endblock %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/contact.css')}}">
+{% endblock %}
 {% block body %}
 
     <div class="container">
         <div class="row">
             <div class="col-md-5 text-center mt-2">
-                <img src="{{ asset('img/pageContact/motifContact.jpg') }}" class="logoContact" alt="logoContact">
+                <img src="{{ asset('img/motifContact.jpg') }}" class="logoContact" alt="logoContact">
             </div>
             <div class="col-md-7 mt-2">
                 <div class="listContact p-5">
@@ -22,6 +24,11 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-12">
+                {% for message in app.flashes('message')  %}
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
                 {{ form_start(contactForm) }}
                 <div class="form-group">
                     {{ form_widget(contactForm.email, {'attr': {'class':'formEmailNomPrenom'}}) }}
@@ -46,11 +53,7 @@
 
                 {{ form_end(contactForm) }}
             </div>
-            {% for message in app.flashes('message')  %}
-                <div class="alert alert-success" role="alert">
-                    {{ message }}
-                </div>
-            {% endfor %}
+
         </div>
     </div>
 {% endblock %}

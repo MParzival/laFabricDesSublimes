@@ -1,0 +1,19 @@
+.navbar-nav{
+    font-size: 16px;
+    font-family: "segeo",sans-serif,cursive;
+}
+
+.bg-light{
+    background-color: white !important;
+}
+.nav-link{
+    text-transform: uppercase;
+    border-bottom: 4px dotted #ffe6ee;
+    margin: 0 20px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 6px dotted #ff99bb;
+}
+.active{
+    border-bottom: 6px dotted #80002a;
+}

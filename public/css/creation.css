@@ -1,0 +1,133 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.span{
+    color: red;
+    font-size: 9px;
+}
+.overlayLightBox img{
+    width: 250px;
+    height: 250px;
+}
+.imgCerisier{
+    position: relative;
+    top: 50px;
+    left: 80px;
+    z-index: -1;
+}
+.imgFeuille{
+    position: relative;
+    top: 90px;
+    left: 90px;
+    z-index: -1;
+}
+.imgHirondelle2{
+    position: relative;
+    width: 205px;
+    height: 235px;
+    z-index: -1;
+    top: 65px;
+    left: 250px;
+}
+.imgOiseau{
+    position: relative;
+    top: 55px;
+    left: 120px;
+    width: 112px;
+    height: 207px;
+    z-index: -1;
+}
+.imgMainMotif2{
+    position: relative;
+    z-index: -1;
+    top: 80px;
+    width: 136px;
+    height: 198px;
+}
+.imgFleur2{
+    position: relative;
+    z-index: -1;
+    left: 190px;
+    top: 40px;
+    width: 180px;
+    height: 180px;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px){
+    .imgFleur2{
+        left: 220px;
+        width: 140px;
+        height: 140px;
+    }
+}
+@media screen and (min-width: 897px) and (max-width: 1279px){
+    .elephant{
+        font-size: 25px;
+    }
+    .segeoUI{
+        font-size: 18px;
+    }
+    .imgCerisier{
+        width: 160px;
+        height: 200px;
+    }
+    .imgFeuille{
+        width: 190px;
+        height: 200px;
+        left: 40px;
+    }
+    .imgHirondelle2{
+        width: 190px;
+        height: 220px;
+        left: 200px;
+    }
+    .imgOiseau{
+        left: 100px;
+        width: 100px;
+        height: 195px;
+    }
+    .imgMainMotif2{
+        top: 80px;
+        right: 20px;
+        width: 180px;
+        height: 180px;
+    }
+    .imgFleur2{
+        left: 170px;
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+@media screen and (max-width: 896px) {
+    #animalDivin,#animalOnirique,#paysageFascinant,
+    #broderie, #portrait{
+        margin-top: 70px;
+    }
+    .overlayLightBox img{
+        width: 150px;
+        height: 150px;
+    }
+    .imgCerisier{
+        display: none;
+    }
+    .imgFeuille{
+        display: none;
+    }
+    .imgHirondelle2{
+        display: none;
+    }
+    .imgOiseau{
+        display: none;
+    }
+    .imgMainMotif2{
+        display: none;
+    }
+    .imgFleur2{
+        display: none;
+    }
+}
+
