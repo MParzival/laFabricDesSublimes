@@ -1,0 +1,64 @@
+.accueil{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.text-accueil{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.taille-image-accueil{
+    width: 350px;
+    height: 350px;
+}
+
+@media screen and (min-width: 897px) and (max-width: 1279px){
+    .taille-image-accueil{
+        width: 250px;
+        height: 250px;
+    }
+    .accueil{
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 896px) {
+    .taille-image-accueil{
+        width: 180px;
+        height: 180px;
+    }
+    .accueil{
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .text-accueil{
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .logoLaFabricDesSublimes{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 499px) {
+    .taille-image-accueil{
+        width: 150px;
+        height: 150px;
+    }
+    .accueil{
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .logoLaFabricDesSublimes{
+        width: 300px;
+        height: 300px;
+    }
+    .imageHome{
+        display: none;
+    }
+}

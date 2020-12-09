@@ -1,122 +1,123 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Voici la Fabric des Sublimés{% endblock %}
-
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/fabric.css')}}">
+{% endblock %}
 {% block body %}
 
-<section id="sublimerEmotion">
-    <div class="container flexbox">
-        <div class="imageSublime">
-            <img src="{{ asset('img/laFabricDesSublimes/image1.jpg') }}" class="alignleft imgSublime" alt="imageSublime">
+    <section id="sublimerEmotion">
+        <div class="container flexbox">
+            <div class="imageSublime">
+                <img src="{{ asset('img/image1.jpg') }}" class="alignleft image1" alt="imageSublime">
+            </div>
+            <div class="paraSublime">
+                <h2 class="elephant titreSublimer">Sublimer vos émotions</h2>
+                <img src="{{ asset('img/maintitre.png') }}" class=" imageMainTitre" alt="imageMain">
+                <p class="textSublimer segeoUI ">
+                    La Fabric des Sublimés est une jolie invention destinée à sublimer, magnifier votre univers, vos sentiments,
+                    vos envies en oeuvre d’art.
+                </p>
+                <p class="segeoUI m-0">
+                    La Nature, l’espèce animale, le souvenir, la famille et
+                    les émotions sont des sources d’inspiration pour mes oeuvres. J’essaie d’élaborer un imaginaire poétique et onirique avec tous ces thèmes.
+                </p>
+                <p class="segeoUI m-0">
+                    Attentive à toutes vos folies artistiques, je vous propose d’être votre créatrice et artiste sur mesure pour vos projets d’oeuvre d’art sur mesure (peinture, dessin, broderie et logo).
+                </p>
+                <p class="segeoUI m-0">
+                    Grâce à ce site web, vous allez entrer dans mon univers artistique avec les oeuvres d’art sur mesure que j’ai déjà réalisé pour ma famille et mes ami(e)s.
+                </p>
+            </div>
         </div>
-        <div class="paraSublime">
-            <h2 class="elephant titreSublimer">Sublimer vos émotions</h2>
-            <img src="{{ asset('img/laFabricDesSublimes/maintitre.png') }}" class=" imageMainTitre" alt="imageMain">
-            <p class="segeoUI m-0">
-                La Fabric des Sublimés est une jolie invention destinée à sublimer, magnifier votre univers, vos sentiments,
-                vos envies en oeuvre d’art.
-            </p>
-            <p class="segeoUI m-0">
-                La Nature, l’espèce animale, le souvenir, la famille et
-                les émotions sont des sources d’inspiration pour mes oeuvres. J’essaie d’élaborer un imaginaire poétique et onirique avec tous ces thèmes.
-            </p>
-            <p class="segeoUI m-0">
-                Attentive à toutes vos folies artistiques, je vous propose d’être votre créatrice et artiste sur mesure pour vos projets d’oeuvre d’art sur mesure.
-            </p>
-            <p class="segeoUI m-0">
-                Grâce à ce site web, vous allez entrer dans mon univers artistique avec les oeuvres d’art sur mesure que j’ai déjà réalisé pour ma famille et mes ami(e)s.
-            </p>
+    </section>
+    <section id="parcour">
+        <div class="container flexbox">
+            <div class="imageMoiEnfant">
+                <img src="{{ asset('img/image2.png') }}" alt="moiEnfant" class="alignRight moiEnfant">
+            </div>
+            <div class="paraParcour">
+                <h2 class="elephant titreParcour">Mon parcours artistique</h2>
+                <img src="{{ asset('img/hirondelletitre.png') }}" class="imageHirondelle" alt="imageHirondelle">
+                <p class="segeoUI textParcour">
+                    Dès l’âge de 7 ans, le dessin et la peinture ont été de forts
+                    moyens d’expression pour moi. Une passion était née, un don même selon
+                    mes proches. Ce don, je l’ai utilisé pour mes études.
+                </p>
+                <p class="segeoUI">
+                    Diplômée en Design d’objet à Toulouse et en Design textile aux Beaux arts de Lyon, cela m’a permi de développer mes compétences en conception d’objets ergonomiques, en motifs et broderie. Puis avec une expérience professionnelle dans la décoration,
+                    j’ai changé ma souris électronique pour reprendre mon pinceau adoré. <br>Un besoin profond d’authenticité, de sensibilité et de créations faites main s’est réveillé en moi.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-<section id="parcour">
-    <div class="container flexbox">
-        <div class="imageMoiEnfant">
-            <img src="{{ asset('img/laFabricDesSublimes/image2.png') }}" alt="moiEnfant" class="alignRight imgSublime">
-        </div>
-        <div class="paraParcour">
-            <h2 class="elephant titreParcour">Mon parcours artistique</h2>
-            <img src="{{ asset('img/laFabricDesSublimes/hirondelletitre.png') }}" class="imageHirondelle" alt="imageHirondelle">
+    </section>
+    <section id="laFabricWhy">
+        <div class="container flexbox">
+            <div class="imageLogo">
+                <img src="{{ asset('img/logo.jpg') }}" alt="imageLogo" class="alignleft imgLogo">
+            </div>
+            <div class="paraWhyFabric">
+                <h2 class="elephant titreWhyFabric">Pourquoi «La Fabric des Sublimés» ?</h2>
+                <img src="{{ asset('img/etoilestitre.jpg') }}" class="img3Stars" alt="image3Etoiles">
 
-            <p class="segeoUI m-0 mt-1">
-                Dès l’âge de 7 ans, le dessin et la peinture ont été de forts
-                moyens d’expression pour moi. Une passion était née, un don même selon
-                mes proches. Ce don, je l’ai utilisé pour mes études.
-            </p>
-            <p class="segeoUI m-0">
-                Diplômée en Design d’objet à Toulouse et en Design textile aux Beaux arts de Lyon, cela m’a permi de développer mes compétences en conception d’objets ergonomiques, en motifs et broderie. Puis avec une expérience professionnelle dans la décoration,
-                j’ai changé ma souris électronique pour reprendre mon pinceau adoré. <br>Un besoin profond d’authenticité, de sensibilité et de créations faites main s’est réveillé en moi.
-            </p>
+                <p class="segeoUI mb-0 textWhy">
+                    Après de loooooongues listes de noms, celui-ci fût une évidence! Simple et pleins de significations.
+                    <b>«La Fabric»</b>, signifie pour moi l’idée de la création faite main; une fabrique de merveilles, artisanale.
+                    <br>De plus, en anglais, <b>«fabric»</b> se traduit par <b>«tissu»</b> donc petit clin d’oeil à mes créations brodées.
+                </p>
+                <p class="segeoUI">
+                    <b>«Des Sublimés»</b>, fait référence à votre univers, à vos émotions que je vais sublimer, mettre en valeur grâce à
+                    mes capacités fabuleuses de transformer votre univers en oeuvre d’art. Et puis j’adore ce mot «sublimer» et sa signification; rendre beau, améliorer le quotidien...
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-<section id="laFabricWhy">
-    <div class="container flexbox">
-        <div class="imageLogo">
-            <img src="{{ asset('img/laFabricDesSublimes/logo.jpg') }}" alt="imageLogo" class="alignleft imgLogo imgSublime">
-        </div>
-        <div class="paraWhyFabric">
-            <h2 class="elephant titreWhyFabric">Pourquoi «La Fabric des Sublimés» ?</h2>
-            <img src="{{ asset('img/laFabricDesSublimes/etoilestitre.jpg') }}" class="img3Stars" alt="image3Etoiles">
+    </section>
+    <section id="logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset('img/etoilestitre2.jpg') }}" class="img2Stars" alt="image2Etoiles">
+                    <h2 class="elephant titre-center titreLogo">Un logo pleins de significations et de messages forts</h2>
+                    <img src="{{ asset('img/etoilestitre3.jpg') }}" class="img1Stars" alt="image1Etoile">
+                    <div class="imageLogoSignification text-center">
+                        <img src="{{ asset('img/84052550_569164163698986_5479724343745314816_n.jpg') }}" class="imgLogoSignification" alt="logoSignification">
+                    </div>
 
-            <p class="segeoUI mb-0">
-                Après de loooooongues listes de noms, celui-ci fût une évidence! Simple et pleins de significations.
-                <b>«La Fabric»</b>, signifie pour moi l’idée de la création faite main; une fabrique de merveilles, artisanale.
-                <br>De plus, en anglais, <b>«fabric»</b> se traduit par <b>«tissu»</b> donc petit clin d’oeil à mes créations brodées.
-            </p>
-            <p class="segeoUI">
-                <b>«Des Sublimés»</b>, fait référence à votre univers, à vos émotions que je vais sublimer, mettre en valeur grâce à
-                mes capacités fabuleuses de transformer votre univers en oeuvre d’art. Et puis j’adore ce mot «sublimer» et sa signification; rendre beau, améliorer le quotidien...
-            </p>
-        </div>
-    </div>
-</section>
-<section id="logo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="{{ asset('img/laFabricDesSublimes/etoilestitre2.jpg') }}" class="img2Stars" alt="image2Etoiles">
-                <h2 class="elephant titre-center titreLogo">Un logo pleins de significations et de messages forts</h2>
-                <img src="{{ asset('img/laFabricDesSublimes/etoilestitre3.jpg') }}" class="img1Stars" alt="image1Etoile">
-                <div class="imageLogoSignification text-center">
-                    <img src="{{ asset('img/84052550_569164163698986_5479724343745314816_n.jpg') }}" class="imgLogoSignification" alt="logoSignification">
                 </div>
-
             </div>
         </div>
-    </div>
-</section>
-<section id="gestePlanete">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="{{ asset('img/laFabricDesSublimes/fleurtitre.jpg') }}" class="imgFleur taille-image-fabric" alt="imageFleur">
-                <h2 class="elephant titre-center">Un petit geste pour notre planète</h2>
-                <p class="segeoUI mt-4 text-center">
-                    Fascinée depuis mon enfance par la Nature et les animaux, le sort de notre planète
-                    me touche profondémment. C’est pour cela que je souhaiterais donner une dimension éco-responsable à
-                    mon entreprise en me fournissant localement ou en France. J’aimerais récupérer des matières premières
-                    destinées à être «jetées» comme du tissu (seconde industrie qui pollue le plus), des fins de rouleaux de fils,
-                    du papier ou autre fourniture auprès de fabricants, de manufactures, de ressourceries pour une seconde vie.
-                    De mon côté, j’ai déjà entrepris des petits gestes comme récupérer une dizaine de
-                    chemises de travail ou des chutes d’ourlet de rideaux destinées à être jetées pour avoir des supports à broder.
-                </p>
+    </section>
+    <section id="gestePlanete">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset('img/fleurTitre.jpg') }}" class="imgFleur taille-image-fabric" alt="imageFleur">
+                    <h2 class="elephant titre-center">Un petit geste pour notre planète</h2>
+                    <p class="segeoUI mt-4 text-center">
+                        Fascinée depuis mon enfance par la Nature et les animaux, le sort de notre planète
+                        me touche profondémment. C’est pour cela que je souhaiterais donner une dimension éco-responsable à
+                        mon entreprise en me fournissant localement ou en France (à la limite en Europe). J’aimerais récupérer des matières premières
+                        destinées à être «jetées» comme du tissu (seconde industrie qui pollue le plus), des fins de rouleaux de fils,
+                        du papier ou autre fourniture auprès de fabricants, de manufactures, de ressourceries pour une seconde vie.
+                        De mon côté, j’ai déjà entrepris des petits gestes comme récupérer une dizaine de
+                        chemises de travail ou des chutes d’ourlet de rideaux destinées à être jetées pour avoir des supports à broder.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="artisanat">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="{{ asset('img/laFabricDesSublimes/mainmotiftitre.png') }}" class="imgMainMotif" alt="image d'une main avec des motif">
-                <h2 class="elephant titre-center">L'artisanat d'art français</h2>
-                <p class="segeoUI mt-4 text-center">
-                    L’artisanat d’art français est essentiel pour moi. Pour promouvoir cet artisanat d’art, toutes mes oeuvres
-                    seront faites à la main et contribueront à valoriser le savoir faire français... enfin je l’espère...
-                </p>
+    </section>
+    <section id="artisanat">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{ asset('img/mainmotiftitre.png') }}" class="imgMainMotif" alt="image d'une main avec des motif">
+                    <h2 class="elephant titre-center">L'artisanat d'art français</h2>
+                    <p class="segeoUI mt-4 text-center">
+                        L’artisanat d’art français est essentiel pour moi. Pour promouvoir cet artisanat d’art, toutes mes oeuvres
+                        seront faites à la main et contribueront à valoriser le savoir faire français... enfin je l’espère...
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 {% endblock %}
